@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Roboto+Slab|Ubuntu");
+/*---------- FONTS/TEXT ---------- */
+/*---------- COLORS ---------- */
+/*---------- BG IMAGE ---------- */
+/*---------- MARGIN/PADDING ---------- */
+/*---------- CONTAINER ---------- */
+/*---------- TRANSITIONS ---------- */
+/*!
+ * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+/* line 7, ../sass/parts/_scrolling-nav.scss */
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/swan_heart.png) !important;
+}
+
+/* line 12, ../sass/parts/_scrolling-nav.scss */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 767px) {
+  /* line 17, ../sass/parts/_scrolling-nav.scss */
+  .navbar {
+    padding: 20px 0;
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+  }
+
+  /* line 23, ../sass/parts/_scrolling-nav.scss */
+  .top-nav-collapse {
+    padding: 0;
+  }
+}
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
+of those sections to manage the look and feel of the site. */
+/* line 32, ../sass/parts/_scrolling-nav.scss */
+.intro-section {
+  height: auto;
+  padding-top: 150px;
+  text-align: center;
+}
+
+/* line 37, ../sass/parts/_scrolling-nav.scss */
+.about-section {
+  height: auto;
+  padding: 150px 0;
+  text-align: center;
+}
+
+/* line 42, ../sass/parts/_scrolling-nav.scss */
+.services-section {
+  height: 100vh;
+  padding-top: 150px;
+  text-align: center;
+  background: #fff;
+}
+
+/* line 48, ../sass/parts/_scrolling-nav.scss */
+.contact-section {
+  height: 100vh;
+  padding-top: 150px;
+  text-align: center;
+  background: #555;
+}
+
+/* line 1, ../sass/parts/_base.sass */
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  letter-spacing: 1.125px;
+  box-sizing: border-box;
+}
+
+/* line 7, ../sass/parts/_base.sass */
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Ubuntu;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* line 13, ../sass/parts/_base.sass */
+.textContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+/* line 18, ../sass/parts/_base.sass */
+.textContainer h1 {
+  background-image: -webkit-linear-gradient(300deg, #061238 18.14%, #f2f5fa 32.13%, rgba(81, 162, 234, 0.99) 58.03%, #1a3248 100%);
+  background-image: -moz-linear-gradient(300deg, #061238 18.14%, #f2f5fa 32.13%, rgba(81, 162, 234, 0.99) 58.03%, #1a3248 100%);
+  background-image: -o-linear-gradient(300deg, #061238 18.14%, #f2f5fa 32.13%, rgba(81, 162, 234, 0.99) 58.03%, #1a3248 100%);
+  background-image: linear-gradient(150deg, #061238 18.14%, #f2f5fa 32.13%, rgba(81, 162, 234, 0.99) 58.03%, #1a3248 100%);
+  border-left: thin outset rgba(238, 246, 252, 0.92);
+  border-right: thin outset #e1421c;
+  border-bottom: thin outset #e1421c;
+  border-top: thin outset rgba(238, 246, 252, 0.92);
+  text-align: center;
+  font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+  font-weight: 400;
+  text-shadow: 0px 1px 1px #ea785c;
+  color: #131313;
+  position: relative;
+  font-style: normal;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+/* line 37, ../sass/parts/_base.sass */
+div p strong {
+  position: relative;
+}
+
+/* line 40, ../sass/parts/_base.sass */
+.getStarted {
+  margin: 10px auto 0px;
+  color: rgba(255, 255, 255, 0.98);
+  font-size: x-large;
+  background-color: #2d3639;
+  padding: 10px;
+  text-shadow: 0px 1px #e1421c;
+  border: thin solid white;
+  -webkit-box-shadow: 3px 2px rgba(225, 66, 28, 0.69);
+  box-shadow: 3px 2px rgba(225, 66, 28, 0.69);
+  position: relative;
+  width: 20%;
+}
+/* line 53, ../sass/parts/_base.sass */
+.getStarted:hover {
+  background-color: rgba(255, 255, 255, 0.89);
+}
+
+/* line 58, ../sass/parts/_base.sass */
+#videoDiv {
+  width: 100%;
+  margin: 2em 0;
+}
+/* line 61, ../sass/parts/_base.sass */
+#videoDiv video {
+  width: 70%;
+  display: block;
+}
+
+/* line 2, ../sass/parts/_intro.sass */
+.textContainer h1 {
+  padding: 0.5em;
+}
+/* line 4, ../sass/parts/_intro.sass */
+.textContainer p {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: thin solid #131313;
+  font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+  text-align: left;
+  text-shadow: 0px 1px 0px #e1421c;
+  background-color: rgba(248, 248, 248, 0.74);
+  position: relative;
+  font-style: normal;
+  font-weight: 400;
+  color: #0a0a0a;
+  font-size: 20px;
+  padding: 10px;
+}
+@media (min-width: 769px) {
+  /* line 4, ../sass/parts/_intro.sass */
+  .textContainer p {
+    grid-template-columns: 200px 1fr;
+  }
+}
+/* line 20, ../sass/parts/_intro.sass */
+.textContainer p .text-box {
+  padding: 1em;
+  font-size: 1.125em;
+}
+/* line 23, ../sass/parts/_intro.sass */
+.textContainer p .text-box strong a {
+  font-size: 1.5em;
+}
+
+/* line 26, ../sass/parts/_intro.sass */
+#textImg {
+  width: 100%;
+  height: auto;
+  -webkit-transition: all 1s ease-in-out 0.3s;
+  -o-transition: all 1s ease-in-out 0.3s;
+  transition: all 1s ease-in-out 0.3s;
+}
+
+/* line 33, ../sass/parts/_intro.sass */
+.button-box {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr;
+  width: 80%;
+  padding: 4em 1em;
+}
+@media (min-width: 520px) {
+  /* line 33, ../sass/parts/_intro.sass */
+  .button-box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* line 43, ../sass/parts/_intro.sass */
+.textButton {
+  padding: 1em 2em;
+  font-size: 1.125em;
+  background: rgba(255, 255, 255, 0.8);
+  border: thin solid #333;
+}
+/* line 48, ../sass/parts/_intro.sass */
+.textButton:hover {
+  background-color: rgba(33, 33, 33, 0.8);
+  color: #f9f9f9;
+}
+
+/* line 1, ../sass/parts/_audio.sass */
+#about {
+  background-image: url(../img/music-1.jpg) !important;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* line 5, ../sass/parts/_audio.sass */
+#audioDiv {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* line 7, ../sass/parts/_audio.sass */
+#audioDiv .innerWrap {
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  width: 100%;
+}
+@media (min-width: 769px) {
+  /* line 7, ../sass/parts/_audio.sass */
+  #audioDiv .innerWrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1100px) {
+  /* line 7, ../sass/parts/_audio.sass */
+  #audioDiv .innerWrap {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* line 18, ../sass/parts/_audio.sass */
+.audioWrap {
+  text-align: center;
+  background: #555;
+  border: 1px solid #333;
+  box-shadow: 1px 1px 4px #fff;
+  transition: 0.5s ease 0.2s;
+}
+/* line 24, ../sass/parts/_audio.sass */
+.audioWrap:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+/* line 26, ../sass/parts/_audio.sass */
+.audioWrap:hover h3 {
+  background: #444;
+  color: #fff;
+}
+/* line 29, ../sass/parts/_audio.sass */
+.audioWrap:hover p {
+  color: #333;
+}
+/* line 31, ../sass/parts/_audio.sass */
+.audioWrap h3 {
+  background: #fff;
+  padding: 2px 0 4px;
+}
+/* line 34, ../sass/parts/_audio.sass */
+.audioWrap p {
+  color: #f0f0f0;
+}
+
+/* line 1, ../sass/parts/_carousel.sass */
+#carousel1 {
+  border: thin solid #e1421c;
+  margin-top: 20px;
+  position: relative;
+}
+/* line 6, ../sass/parts/_carousel.sass */
+#carousel1 .carousel-indicators {
+  position: relative;
+  margin-bottom: 0px;
+}
+
+/* line 10, ../sass/parts/_carousel.sass */
+.carousel-inner .item.active .carousel-caption {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 17, ../sass/parts/_carousel.sass */
+.item.active .carousel-caption h3 {
+  margin-top: 0px;
+}
+
+/* line 20, ../sass/parts/_carousel.sass */
+.item {
+  width: 100%;
+}
+/* line 22, ../sass/parts/_carousel.sass */
+.item img {
+  width: 80%;
+}
+
+/* line 25, ../sass/parts/_carousel.sass */
+.imgDiv {
+  margin: 0px;
+  padding: 0px;
+  width: 30%;
+  border: thin solid #e1421c;
+  height: auto;
+}
+/* line 32, ../sass/parts/_carousel.sass */
+.imgDiv .img-responsive {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 1, ../sass/parts/_info.sass */
+.contact-section h1 {
+  color: #fff;
+  margin-bottom: 2em;
+}
+
+/* line 5, ../sass/parts/_info.sass */
+.panel-heading {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #6699ff 0%, #000066 100%);
+}
+/* line 8, ../sass/parts/_info.sass */
+.panel-heading .panel-title {
+  color: #f8f8f8;
+}
+/* line 10, ../sass/parts/_info.sass */
+.panel-heading .panel-title a {
+  display: flex;
+  padding: 0.5em 0 0.5em 1em;
+}
+/* line 13, ../sass/parts/_info.sass */
+.panel-heading .panel-title a:hover {
+  text-decoration: none;
+  background: #555;
+}
+
+/* line 17, ../sass/parts/_info.sass */
+.panel-body {
+  background: #d2d2d2;
+}
+
+/* line 19, ../sass/parts/_info.sass */
+.contact-list {
+  padding: 0;
+}
+/* line 31, ../sass/parts/_toolbox.sass */
+.contact-list li {
+  list-style: none;
+}
+/* line 33, ../sass/parts/_toolbox.sass */
+.contact-list li a {
+  text-decoration: none;
+}
+
+/* line 1, ../sass/parts/_footer.sass */
+#topReturn {
+  width: 60px;
+  margin-left: 1em;
+}
+/* line 4, ../sass/parts/_footer.sass */
+#topReturn h5 {
+  text-align: center;
+  color: #444;
+}
+
+/* line 8, ../sass/parts/_footer.sass */
+#sideMenu2 {
+  position: relative;
+  background: #444;
+}
+/* line 11, ../sass/parts/_footer.sass */
+#sideMenu2 .menu2 {
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  width: 120px;
+  padding: 0;
+}
+/* line 31, ../sass/parts/_toolbox.sass */
+#sideMenu2 .menu2 li {
+  list-style: none;
+}
+/* line 33, ../sass/parts/_toolbox.sass */
+#sideMenu2 .menu2 li a {
+  text-decoration: none;
+}
+/* line 17, ../sass/parts/_footer.sass */
+#sideMenu2 .menu2 li {
+  margin: 1em 0;
+  text-indent: 1em;
+  text-shadow: 0.5px 0.5px #fff;
+  box-shadow: 1px 1px 4px #f9f9f9;
+  background: #e2e2e2;
+  border: thin solid #444;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+/* line 26, ../sass/parts/_footer.sass */
+#sideMenu2 .menu2 li:hover {
+  transform: scale(0.95) translateX(0.5em);
+  background: #666;
+}
+/* line 29, ../sass/parts/_footer.sass */
+#sideMenu2 .menu2 li a {
+  display: flex;
+  padding: 5px;
+  color: #333 !important;
+}
+/* line 33, ../sass/parts/_footer.sass */
+#sideMenu2 .menu2 li a:hover {
+  color: #fff !important;
+}
+
+/* line 36, ../sass/parts/_footer.sass */
+#footerTitle {
+  text-align: center;
+}
+/* line 38, ../sass/parts/_footer.sass */
+#footerTitle a {
+  font-size: 1em;
+  color: #f9f9f9 !important;
+}

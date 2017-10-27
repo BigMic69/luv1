@@ -1,0 +1,35 @@
+#about
+  background-image: url(../img/music-1.jpg) !important
+  +bg-cover-fixed
+
+#audioDiv
+  +box-fluid
+  .innerWrap
+    display: grid
+    grid-gap: .5em
+    grid-template-columns: 1fr
+    grid-template-rows: auto
+    width: 100%
+    @media (min-width: 769px)
+      grid-template-columns: repeat(2, 1fr)
+    @media (min-width: 1100px)
+      grid-template-columns: repeat(3, 1fr)
+
+.audioWrap
+  text-align: center
+  background: #555
+  border: 1px solid #333
+  box-shadow: 1px 1px 4px #fff
+  +trans-0
+  &:hover
+    background: rgba(255, 255, 255, .4)
+    h3
+      background: #444
+      color: #fff
+    p
+      color: #333
+  h3
+    background: #fff
+    padding: 2px 0 4px
+  p
+    color: #f0f0f0
