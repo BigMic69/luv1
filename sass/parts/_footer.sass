@@ -1,9 +1,28 @@
+.footer
+  position: fixed
+  bottom: 0
+
 #topReturn
   width: 60px
+  height: 80px
   margin-left: 1em
+  padding: 0
+  +trans-0
+  &:hover
+    transform: scale(.9)
+  #navTop img
+    width: 100%
+    margin: 0
+    background: rgba(255, 255, 255, .0)
+  a
+    +box-fluid
   h5
+    margin: 0
+    padding: 5px
     text-align: center
-    color: #444
+    color: #333
+    font-weight: 600
+    cursor: pointer
 
 #sideMenu2
   position: relative
@@ -35,6 +54,7 @@
 
 #footerTitle
   text-align: center
+  padding-left: 1em
   a
     font-size: 1em
     color: #f9f9f9 !important

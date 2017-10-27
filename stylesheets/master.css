@@ -43,7 +43,7 @@ of those sections to manage the look and feel of the site. */
 /* line 32, ../sass/parts/_scrolling-nav.scss */
 .intro-section {
   height: auto;
-  padding-top: 150px;
+  padding: 150px 0;
   text-align: center;
 }
 
@@ -65,9 +65,8 @@ of those sections to manage the look and feel of the site. */
 /* line 48, ../sass/parts/_scrolling-nav.scss */
 .contact-section {
   height: 100vh;
-  padding-top: 150px;
+  padding: 150px 0;
   text-align: center;
-  background: #555;
 }
 
 /* line 1, ../sass/parts/_base.sass */
@@ -150,6 +149,32 @@ div p strong {
 #videoDiv video {
   width: 70%;
   display: block;
+}
+
+/* line 1, ../sass/parts/_nav.sass */
+nav {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+/* line 3, ../sass/parts/_nav.sass */
+nav:hover {
+  background: rgba(255, 255, 255, 0.6) !important;
+}
+/* line 5, ../sass/parts/_nav.sass */
+nav ul li a {
+  text-shadow: 1px 1px #fff !important;
+  font-size: 1.25em;
+  cursor: pointer;
+}
+/* line 9, ../sass/parts/_nav.sass */
+nav ul li a:hover {
+  border-bottom: thin solid #03306e;
+}
+
+/* line 12, ../sass/parts/_nav.sass */
+.navbar-header a {
+  color: #f8f8f8 !important;
+  text-shadow: 1px 1px #0f1b4b !important;
+  font-size: 1.25em;
 }
 
 /* line 2, ../sass/parts/_intro.sass */
@@ -249,7 +274,7 @@ div p strong {
   grid-template-rows: auto;
   width: 100%;
 }
-@media (min-width: 769px) {
+@media (min-width: 720px) {
   /* line 7, ../sass/parts/_audio.sass */
   #audioDiv .innerWrap {
     grid-template-columns: repeat(2, 1fr);
@@ -268,7 +293,7 @@ div p strong {
   background: #555;
   border: 1px solid #333;
   box-shadow: 1px 1px 4px #fff;
-  transition: 0.5s ease 0.2s;
+  transition: 0.2s ease 0.1s;
 }
 /* line 24, ../sass/parts/_audio.sass */
 .audioWrap:hover {
@@ -344,40 +369,56 @@ div p strong {
   padding: 0px;
 }
 
-/* line 1, ../sass/parts/_info.sass */
+/* line 1, ../sass/parts/_contact.sass */
+.contact-section {
+  margin-bottom: 25vh;
+  background-image: url(../img/contact-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* line 6, ../sass/parts/_contact.sass */
 .contact-section h1 {
   color: #fff;
   margin-bottom: 2em;
 }
 
-/* line 5, ../sass/parts/_info.sass */
+/* line 10, ../sass/parts/_contact.sass */
+#accordion {
+  width: 70%;
+}
+
+/* line 13, ../sass/parts/_contact.sass */
 .panel-heading {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   background: linear-gradient(to bottom, #6699ff 0%, #000066 100%);
 }
-/* line 8, ../sass/parts/_info.sass */
+/* line 16, ../sass/parts/_contact.sass */
 .panel-heading .panel-title {
   color: #f8f8f8;
 }
-/* line 10, ../sass/parts/_info.sass */
+/* line 18, ../sass/parts/_contact.sass */
 .panel-heading .panel-title a {
   display: flex;
+  font-size: 1.5em;
   padding: 0.5em 0 0.5em 1em;
+  cursor: pointer;
 }
-/* line 13, ../sass/parts/_info.sass */
+/* line 23, ../sass/parts/_contact.sass */
 .panel-heading .panel-title a:hover {
   text-decoration: none;
   background: #555;
 }
 
-/* line 17, ../sass/parts/_info.sass */
+/* line 27, ../sass/parts/_contact.sass */
 .panel-body {
-  background: #d2d2d2;
+  background: #fff;
 }
 
-/* line 19, ../sass/parts/_info.sass */
+/* line 29, ../sass/parts/_contact.sass */
 .contact-list {
   padding: 0;
 }
@@ -389,24 +430,60 @@ div p strong {
 .contact-list li a {
   text-decoration: none;
 }
+/* line 31, ../sass/parts/_contact.sass */
+.contact-list li {
+  font-size: 1.25em;
+  font-weight: 500;
+}
 
 /* line 1, ../sass/parts/_footer.sass */
-#topReturn {
-  width: 60px;
-  margin-left: 1em;
-}
-/* line 4, ../sass/parts/_footer.sass */
-#topReturn h5 {
-  text-align: center;
-  color: #444;
+.footer {
+  position: fixed;
+  bottom: 0;
 }
 
-/* line 8, ../sass/parts/_footer.sass */
+/* line 5, ../sass/parts/_footer.sass */
+#topReturn {
+  width: 60px;
+  height: 80px;
+  margin-left: 1em;
+  padding: 0;
+  transition: 0.2s ease 0.1s;
+}
+/* line 11, ../sass/parts/_footer.sass */
+#topReturn:hover {
+  transform: scale(0.9);
+}
+/* line 13, ../sass/parts/_footer.sass */
+#topReturn #navTop img {
+  width: 100%;
+  margin: 0;
+  background: rgba(255, 255, 255, 0);
+}
+/* line 17, ../sass/parts/_footer.sass */
+#topReturn a {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* line 19, ../sass/parts/_footer.sass */
+#topReturn h5 {
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* line 27, ../sass/parts/_footer.sass */
 #sideMenu2 {
   position: relative;
   background: #444;
 }
-/* line 11, ../sass/parts/_footer.sass */
+/* line 30, ../sass/parts/_footer.sass */
 #sideMenu2 .menu2 {
   position: fixed;
   right: 1em;
@@ -422,7 +499,7 @@ div p strong {
 #sideMenu2 .menu2 li a {
   text-decoration: none;
 }
-/* line 17, ../sass/parts/_footer.sass */
+/* line 36, ../sass/parts/_footer.sass */
 #sideMenu2 .menu2 li {
   margin: 1em 0;
   text-indent: 1em;
@@ -433,27 +510,28 @@ div p strong {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-/* line 26, ../sass/parts/_footer.sass */
+/* line 45, ../sass/parts/_footer.sass */
 #sideMenu2 .menu2 li:hover {
   transform: scale(0.95) translateX(0.5em);
   background: #666;
 }
-/* line 29, ../sass/parts/_footer.sass */
+/* line 48, ../sass/parts/_footer.sass */
 #sideMenu2 .menu2 li a {
   display: flex;
   padding: 5px;
   color: #333 !important;
 }
-/* line 33, ../sass/parts/_footer.sass */
+/* line 52, ../sass/parts/_footer.sass */
 #sideMenu2 .menu2 li a:hover {
   color: #fff !important;
 }
 
-/* line 36, ../sass/parts/_footer.sass */
+/* line 55, ../sass/parts/_footer.sass */
 #footerTitle {
   text-align: center;
+  padding-left: 1em;
 }
-/* line 38, ../sass/parts/_footer.sass */
+/* line 58, ../sass/parts/_footer.sass */
 #footerTitle a {
   font-size: 1em;
   color: #f9f9f9 !important;

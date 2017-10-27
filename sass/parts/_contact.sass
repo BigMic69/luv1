@@ -1,0 +1,33 @@
+.contact-section
+  margin-bottom: 25vh
+  background-image: url(../img/contact-1.jpg)
+  +bg-cover-fixed
+
+.contact-section h1
+  color: #fff
+  margin-bottom: 2em
+
+#accordion
+  width: 70%
+
+.panel-heading
+  +no-cush
+  background: linear-gradient(to bottom, #6699ff 0%, #000066 100%)
+  .panel-title
+    color: #f8f8f8
+    a
+      display: flex
+      font-size: 1.5em
+      padding: .5em 0 .5em 1em
+      cursor: pointer
+      &:hover
+        text-decoration: none
+        background: #555
+
+.panel-body
+  background: #fff
+.contact-list
+  +menu-style
+  li
+    font-size: 1.25em
+    font-weight: 500
