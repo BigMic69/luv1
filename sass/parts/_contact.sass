@@ -5,10 +5,13 @@
 
 .contact-section h1
   color: #fff
-  margin-bottom: 2em
+  margin-bottom: 1em
 
 #accordion
-  width: 70%
+  width: 96%
+  margin: 0 auto
+  @media (min-width: 769px)
+    width: 60%
 
 .panel-heading
   +no-cush
@@ -26,6 +29,8 @@
 
 .panel-body
   background: #fff
+  iframe
+    width: 100%
 .contact-list
   +menu-style
   li

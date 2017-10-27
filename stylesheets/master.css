@@ -56,16 +56,15 @@ of those sections to manage the look and feel of the site. */
 
 /* line 42, ../sass/parts/_scrolling-nav.scss */
 .services-section {
-  height: 100vh;
-  padding-top: 150px;
+  padding: 150px 0;
   text-align: center;
-  background: #fff;
+  background: rgba(71, 150, 246, 0.5);
 }
 
-/* line 48, ../sass/parts/_scrolling-nav.scss */
+/* line 47, ../sass/parts/_scrolling-nav.scss */
 .contact-section {
   height: 100vh;
-  padding: 150px 0;
+  padding: 100px 0;
   text-align: center;
 }
 
@@ -167,14 +166,21 @@ nav ul li a {
 }
 /* line 9, ../sass/parts/_nav.sass */
 nav ul li a:hover {
-  border-bottom: thin solid #03306e;
+  color: #e7e7e7 !important;
+  text-shadow: 1px 1px #333 !important;
+  background: rgba(3, 48, 110, 0.5) !important;
+  border-bottom: thin solid #d51010;
 }
 
-/* line 12, ../sass/parts/_nav.sass */
+/* line 16, ../sass/parts/_nav.sass */
 .navbar-header a {
   color: #f8f8f8 !important;
   text-shadow: 1px 1px #0f1b4b !important;
   font-size: 1.25em;
+}
+/* line 20, ../sass/parts/_nav.sass */
+.navbar-header .navbar-toggle .icon-bar {
+  background: #d51010 !important;
 }
 
 /* line 2, ../sass/parts/_intro.sass */
@@ -227,7 +233,7 @@ nav ul li a:hover {
   display: grid;
   grid-gap: 1em;
   grid-template-columns: 1fr;
-  width: 80%;
+  width: 90%;
   padding: 4em 1em;
 }
 @media (min-width: 520px) {
@@ -318,55 +324,24 @@ nav ul li a:hover {
   color: #f0f0f0;
 }
 
-/* line 1, ../sass/parts/_carousel.sass */
-#carousel1 {
-  border: thin solid #e1421c;
-  margin-top: 20px;
-  position: relative;
-}
-/* line 6, ../sass/parts/_carousel.sass */
-#carousel1 .carousel-indicators {
-  position: relative;
-  margin-bottom: 0px;
-}
-
-/* line 10, ../sass/parts/_carousel.sass */
-.carousel-inner .item.active .carousel-caption {
-  position: relative;
-  left: 0px;
-  top: 0px;
-  margin: 0px;
-  padding: 0px;
-}
-
-/* line 17, ../sass/parts/_carousel.sass */
-.item.active .carousel-caption h3 {
-  margin-top: 0px;
-}
-
-/* line 20, ../sass/parts/_carousel.sass */
-.item {
-  width: 100%;
-}
-/* line 22, ../sass/parts/_carousel.sass */
-.item img {
-  width: 80%;
-}
-
-/* line 25, ../sass/parts/_carousel.sass */
-.imgDiv {
-  margin: 0px;
-  padding: 0px;
-  width: 30%;
-  border: thin solid #e1421c;
-  height: auto;
-}
-/* line 32, ../sass/parts/_carousel.sass */
-.imgDiv .img-responsive {
+/* line 1, ../sass/parts/_video.sass */
+#videoDiv {
   width: 100%;
   height: auto;
-  margin: 0px;
-  padding: 0px;
+}
+/* line 5, ../sass/parts/_video.sass */
+#videoDiv video {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  display: block;
+}
+
+/* line 12, ../sass/parts/_video.sass */
+.services-section h1 {
+  color: #fff !important;
 }
 
 /* line 1, ../sass/parts/_contact.sass */
@@ -381,44 +356,55 @@ nav ul li a:hover {
 /* line 6, ../sass/parts/_contact.sass */
 .contact-section h1 {
   color: #fff;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 /* line 10, ../sass/parts/_contact.sass */
 #accordion {
-  width: 70%;
+  width: 96%;
+  margin: 0 auto;
+}
+@media (min-width: 769px) {
+  /* line 10, ../sass/parts/_contact.sass */
+  #accordion {
+    width: 60%;
+  }
 }
 
-/* line 13, ../sass/parts/_contact.sass */
+/* line 16, ../sass/parts/_contact.sass */
 .panel-heading {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   background: linear-gradient(to bottom, #6699ff 0%, #000066 100%);
 }
-/* line 16, ../sass/parts/_contact.sass */
+/* line 19, ../sass/parts/_contact.sass */
 .panel-heading .panel-title {
   color: #f8f8f8;
 }
-/* line 18, ../sass/parts/_contact.sass */
+/* line 21, ../sass/parts/_contact.sass */
 .panel-heading .panel-title a {
   display: flex;
   font-size: 1.5em;
   padding: 0.5em 0 0.5em 1em;
   cursor: pointer;
 }
-/* line 23, ../sass/parts/_contact.sass */
+/* line 26, ../sass/parts/_contact.sass */
 .panel-heading .panel-title a:hover {
   text-decoration: none;
   background: #555;
 }
 
-/* line 27, ../sass/parts/_contact.sass */
+/* line 30, ../sass/parts/_contact.sass */
 .panel-body {
   background: #fff;
 }
+/* line 32, ../sass/parts/_contact.sass */
+.panel-body iframe {
+  width: 100%;
+}
 
-/* line 29, ../sass/parts/_contact.sass */
+/* line 34, ../sass/parts/_contact.sass */
 .contact-list {
   padding: 0;
 }
@@ -430,7 +416,7 @@ nav ul li a:hover {
 .contact-list li a {
   text-decoration: none;
 }
-/* line 31, ../sass/parts/_contact.sass */
+/* line 36, ../sass/parts/_contact.sass */
 .contact-list li {
   font-size: 1.25em;
   font-weight: 500;
@@ -502,6 +488,7 @@ nav ul li a:hover {
 /* line 36, ../sass/parts/_footer.sass */
 #sideMenu2 .menu2 li {
   margin: 1em 0;
+  padding: 1px;
   text-indent: 1em;
   text-shadow: 0.5px 0.5px #fff;
   box-shadow: 1px 1px 4px #f9f9f9;
@@ -510,28 +497,29 @@ nav ul li a:hover {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-/* line 45, ../sass/parts/_footer.sass */
+/* line 46, ../sass/parts/_footer.sass */
 #sideMenu2 .menu2 li:hover {
   transform: scale(0.95) translateX(0.5em);
   background: #666;
 }
-/* line 48, ../sass/parts/_footer.sass */
+/* line 49, ../sass/parts/_footer.sass */
 #sideMenu2 .menu2 li a {
   display: flex;
   padding: 5px;
   color: #333 !important;
 }
-/* line 52, ../sass/parts/_footer.sass */
+/* line 53, ../sass/parts/_footer.sass */
 #sideMenu2 .menu2 li a:hover {
   color: #fff !important;
+  border-right: 10px solid #d51010 !important;
 }
 
-/* line 55, ../sass/parts/_footer.sass */
+/* line 57, ../sass/parts/_footer.sass */
 #footerTitle {
   text-align: center;
   padding-left: 1em;
 }
-/* line 58, ../sass/parts/_footer.sass */
+/* line 60, ../sass/parts/_footer.sass */
 #footerTitle a {
   font-size: 1em;
   color: #f9f9f9 !important;

@@ -7,9 +7,15 @@ nav
     font-size: 1.25em
     cursor: pointer
     &:hover
-      border-bottom: thin solid $clr-primary
+      color: #e7e7e7 !important
+      text-shadow: 1px 1px #333 !important
+      background: $clr-primary-alpha !important
+      border-bottom: thin solid $clr-secondary
 
-.navbar-header a
-  color: #f8f8f8 !important
-  text-shadow: 1px 1px #0f1b4b !important
-  font-size: 1.25em
+.navbar-header
+  a
+    color: #f8f8f8 !important
+    text-shadow: 1px 1px #0f1b4b !important
+    font-size: 1.25em
+  .navbar-toggle .icon-bar
+    background: $clr-secondary !important
