@@ -1,5 +1,6 @@
 .contact-section
-  margin-bottom: 25vh
+  margin-bottom: 100vh
+  padding: 15vh 0
   background-image: url(../img/contact-1.jpg)
   +bg-cover-fixed
 
@@ -8,7 +9,7 @@
   margin-bottom: 1em
 
 #accordion
-  width: 96%
+  width: 98%
   margin: 0 auto
   @media (min-width: 769px)
     width: 60%
@@ -23,8 +24,8 @@
       font-size: 1.5em
       padding: .5em 0 .5em 1em
       cursor: pointer
+      text-decoration: none
       &:hover
-        text-decoration: none
         background: #555
 
 .panel-body
@@ -34,5 +35,24 @@
 .contact-list
   +menu-style
   li
-    font-size: 1.25em
+    font-size: 1.1em
     font-weight: 500
+
+.social-container
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-gap: 5px
+  .social
+    width: 60px
+    margin: 0 auto
+    box-shadow: 1px 1px 5px #333
+    +trans-0
+    &:hover
+      transform: scale(1.2)
+
+.btn.contact-form
+  border: thin solid #333
+  +trans-0
+  &:hover
+    background: #333
+    color: #f1f1f1

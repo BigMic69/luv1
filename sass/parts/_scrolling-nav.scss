@@ -45,7 +45,7 @@ of those sections to manage the look and feel of the site. */
   background: rgba(71, 150, 246, 0.5);
 }
 .contact-section {
-  height: 100vh;
+  min-height: 100vh;
   padding: 100px 0;
   text-align: center;
 }

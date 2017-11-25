@@ -2,15 +2,21 @@ nav
   background: rgba(255, 255, 255, .2) !important
   &:hover
     background: rgba(255, 255, 255, .6) !important
-  ul li a
-    text-shadow: 1px 1px #fff !important
-    font-size: 1.25em
-    cursor: pointer
-    &:hover
-      color: #e7e7e7 !important
-      text-shadow: 1px 1px #333 !important
-      background: $clr-primary-alpha !important
-      border-bottom: thin solid $clr-secondary
+  ul
+    li
+      padding-left: 1em
+      a
+        text-shadow: .6px .6px #fff !important
+        font-size: 1.25em
+        cursor: pointer
+        &:hover
+          color: #e7e7e7 !important
+          text-shadow: 1px 1px #333 !important
+          background: $clr-primary-alpha !important
+          border-bottom: thin solid $clr-secondary
+
+.navbar-brand
+  margin-left: 1em
 
 .navbar-header
   a

@@ -10,6 +10,10 @@
   +trans-0
   &:hover
     transform: scale(.9)
+  @media (max-width: 700px)
+    width: 40px
+    height: 60px
+    margin-left: 2px
   #navTop img
     width: 100%
     margin: 0
@@ -33,26 +37,29 @@
     bottom: 1em
     width: 120px
     +menu-style
+    @media (max-width: 700px)
+      right: -20%
     li
       margin: 1em 0
       padding: 1px
       text-indent: 1em
       text-shadow: .5px .5px #fff
-      box-shadow: 1px 1px 4px #f9f9f9
+      box-shadow: 1px 1px 2px #f9f9f9
       background: #e2e2e2
       border: thin solid #444
       border-top-left-radius: 10px
       border-bottom-left-radius: 10px
       &:hover
-        transform: scale(.95) translateX(.5em)
         background: #666
+        border-right: 2px solid $clr-secondary !important
+        @media (max-width: 700px)
+          transform: scale(.95) translateX(-4em)
       a
         display: flex
         padding: 5px
         color: #333 !important
         &:hover
           color: #fff !important
-          border-right: 10px solid $clr-secondary !important
 
 #footerTitle
   text-align: center
